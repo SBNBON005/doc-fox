@@ -1,4 +1,5 @@
 import os
+import logging
 
 cardinal_to_angle = {0: "E", 90: "N", 180: "W", 270: "S"}
 angle_to_cardinal = {"E": 0, "N": 90, "W": 180, "S": 270}
@@ -13,11 +14,7 @@ class Rover:
 
     def rotate(self, angle):
         self.direction += angle
-
-        if self.direction == 360:
-            self.direction = 0
-        elif self.direction < 0:
-            self.direction = 360 - abs(self.direction)
+        self.direction %= 360
 
     def move(self, boundry_x, boundry_y):
         if 0 <= self.x + moves[self.direction]['x'] <= boundry_x:
@@ -32,7 +29,7 @@ class Rover:
 def get_inputs():
     filename = "demofile.txt"
     if os.path.getsize(filename) == 0:
-        print("Empty File")
+        logging.info("Empty File")
         return
 
     with open(filename, "r") as f:
