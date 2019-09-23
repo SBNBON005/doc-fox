@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/SBNBON005/doc-fox.svg?branch=master)](https://travis-ci.org/SBNBON005/doc-fox) [![codecov](https://codecov.io/gh/SBNBON005/doc-fox/branch/master/graph/badge.svg)](https://codecov.io/gh/SBNBON005/doc-fox)
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/) [![Build Status](https://travis-ci.org/SBNBON005/doc-fox.svg?branch=master)](https://travis-ci.org/SBNBON005/doc-fox) [![codecov](https://codecov.io/gh/SBNBON005/doc-fox/branch/master/graph/badge.svg)](https://codecov.io/gh/SBNBON005/doc-fox)
 
 ## Description
 A program that takes in a file with commands and then displays its resulting rover location to console.
