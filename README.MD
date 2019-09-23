@@ -1,5 +1,9 @@
 ## Description
 A program that takes in a file with commands and then displays its resulting rover location to console.
+The file consists of:
+- Zone's boundary in cartesian coordinates.
+- starting x,y coordinates of the rovers.
+- commands 
 
 ### Commands
 - M - Move one space forward in the direction it is facing.
