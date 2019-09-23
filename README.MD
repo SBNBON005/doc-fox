@@ -2,9 +2,9 @@
 A program that takes in a file with commands and then displays its resulting rover location to console.
 
 ### Commands
-M - Move one space forward in the direction it is facing.
-R - rotate 90 degrees to the right
-L - rotate 90 degrees to the left
+- M - Move one space forward in the direction it is facing.
+- R - rotate 90 degrees to the right
+- L - rotate 90 degrees to the left
 
 ### Assumptions
 - Rover should not go beyond the zone's boundary
