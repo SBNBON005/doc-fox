@@ -26,8 +26,7 @@ class Rover:
         return f"{self.x} {self.y} {cardinal_to_angle[self.direction]}"
 
 
-def get_inputs():
-    filename = "demofile.txt"
+def get_inputs(filename):
     if os.path.getsize(filename) == 0:
         logging.info("Empty File")
         return
@@ -61,6 +60,7 @@ def run(boundry_x, boundry_y, initial_loc_x, initial_loc_y, initial_loc_directio
 
 
 if __name__ == "__main__":
-    boundry_x, boundry_y, initial_loc_x, initial_loc_y, initial_loc_direction, commands = get_inputs()
+    filename = "demofile.txt"
+    boundry_x, boundry_y, initial_loc_x, initial_loc_y, initial_loc_direction, commands = get_inputs(filename)
     resultant_loc = run(boundry_x, boundry_y, initial_loc_x, initial_loc_y, initial_loc_direction, commands)
     print(resultant_loc)

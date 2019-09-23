@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/SBNBON005/doc-fox.svg?branch=master)](https://travis-ci.org/SBNBON005/doc-fox) [![codecov](https://codecov.io/gh/SBNBON005/doc-fox/branch/master/graph/badge.svg)](https://codecov.io/gh/SBNBON005/doc-fox)
+
 ## Description
 A program that takes in a file with commands and then displays its resulting rover location to console.
 The file consists of:
